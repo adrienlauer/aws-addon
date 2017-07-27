@@ -12,7 +12,7 @@ import org.seedstack.aws.lambda.fixtures.TestRequestHandler;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
-public class AbstractRequestHandlerIT {
+public class BaseRequestHandlerIT {
     @Test
     public void testHandlerInjection() throws Exception {
         TestRequestHandler testFunctionHandler = new TestRequestHandler();

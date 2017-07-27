@@ -8,11 +8,11 @@
 package org.seedstack.aws.lambda.internal;
 
 import com.google.inject.AbstractModule;
-import org.seedstack.aws.lambda.AbstractRequestHandler;
+import org.seedstack.aws.lambda.BaseRequestHandler;
 
 class AwsLambdaModule extends AbstractModule {
     @Override
     protected void configure() {
-        requestStaticInjection(AbstractRequestHandler.class);
+        requestStaticInjection(BaseRequestHandler.class);
     }
 }

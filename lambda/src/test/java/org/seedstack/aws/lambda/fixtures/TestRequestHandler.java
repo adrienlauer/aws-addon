@@ -8,12 +8,12 @@
 package org.seedstack.aws.lambda.fixtures;
 
 import com.amazonaws.services.lambda.runtime.Context;
-import org.seedstack.aws.lambda.AbstractRequestHandler;
+import org.seedstack.aws.lambda.BaseRequestHandler;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-public class TestRequestHandler extends AbstractRequestHandler<String, String> {
+public class TestRequestHandler extends BaseRequestHandler<String, String> {
     @Inject
     @Named("en")
     private Greeter greeter;

@@ -13,16 +13,19 @@ import org.seedstack.seed.core.Seed;
 
 import javax.inject.Inject;
 
-public abstract class AbstractRequestHandler<I, O> implements RequestHandler<I, O> {
+public abstract class BaseRequestHandler<I, O> implements RequestHandler<I, O> {
     @Inject
     private static Injector injector;
 
-    public AbstractRequestHandler() {
+    static {
         try {
             Seed.getLauncher().launch(new String[0]);
         } catch (Exception e) {
             throw Seed.translateException(e);
         }
+    }
+
+    public BaseRequestHandler() {
         injector.injectMembers(this);
     }
 }
