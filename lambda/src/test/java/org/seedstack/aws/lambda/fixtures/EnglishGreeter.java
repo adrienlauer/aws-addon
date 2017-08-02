@@ -9,7 +9,10 @@ package org.seedstack.aws.lambda.fixtures;
 
 import org.seedstack.seed.it.ITBind;
 
-@ITBind(from = Greeter.class, named = "en")
+import javax.inject.Named;
+
+@ITBind(from = Greeter.class)
+@Named("en")
 public class EnglishGreeter implements Greeter {
     @Override
     public String greet(String name) {
