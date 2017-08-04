@@ -12,4 +12,13 @@ menu:
         weight: 10
 ---
 
-...
+SeedStack Amazon Web Service (AWS) add-on provides integration between popular AWS products and SeedStack.<!--more--> 
+
+# AWS Lambda
+
+This module supports the [AWS Lambda](https://aws.amazon.com/lambda/details) server-less architecture. See the 
+[module documentation]({{< ref "addons/aws/lambda.md" >}}) for details.
+
+# Other modules
+
+More modules coming soon...
