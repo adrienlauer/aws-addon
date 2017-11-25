@@ -2,6 +2,7 @@
 title: "AWS Lambda"
 repo: "https://github.com/seedstack/aws-addon"
 author: Adrien LAUER
+parent: "Amazon Web Services"
 description: "Official integration of popular Amazon Web Services (AWS) products."
 weight: -1
 tags:
