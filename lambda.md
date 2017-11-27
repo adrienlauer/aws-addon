@@ -1,5 +1,6 @@
 ---
 title: "AWS Lambda"
+addon: "Amazon Web Services"
 repo: "https://github.com/seedstack/aws-addon"
 author: Adrien LAUER
 parent: "Amazon Web Services"
@@ -10,17 +11,18 @@ tags:
 zones:
     - Addons
 menu:
-    AddonAWS:
+    Amazon Web Services:
+        parent: "contents"
         weight: 20
 ---
 
 This module supports the [AWS Lambda](https://aws.amazon.com/lambda/details) server-less architecture.<!--more-->
 
-# Dependencies
+## Dependency
  
 {{< dependency g="org.seedstack.addons.aws" a="aws-lambda" >}}
 
-# Usage
+## Usage
 
 The add-on uses on the [interface-based approach](http://docs.aws.amazon.com/lambda/latest/dg/java-handler-using-predefined-interfaces.html) 
 of AWS Lambda. To declare a SeedStack-enabled request handler, extend the {{< java "org.seedstack.aws.lambda.BaseRequestHandler" >}} 
@@ -52,7 +54,7 @@ small so the initialization time is kept to a minimum.
 All [sources of events](http://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html) are supported.
 {{% /callout %}}
  
-# Packaging
+## Packaging
 
 Packaging should be done according to the [AWS lambda packaging rules](http://docs.aws.amazon.com/lambda/latest/dg/lambda-java-how-to-create-deployment-package.html),
 that is using the Maven shade plugin instead of normal SeedStack capsule:
