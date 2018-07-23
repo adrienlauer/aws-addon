@@ -9,9 +9,8 @@ package org.seedstack.aws.lambda;
 
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.google.inject.Injector;
-import org.seedstack.seed.core.Seed;
-
 import javax.inject.Inject;
+import org.seedstack.seed.core.Seed;
 
 public abstract class BaseRequestHandler<I, O> implements RequestHandler<I, O> {
     @Inject
